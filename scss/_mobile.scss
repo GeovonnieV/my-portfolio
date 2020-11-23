@@ -6,6 +6,15 @@
 // desktops and laptops screens
 @include mediaLg{
 
+    #about-content-div h1{
+        font-size: 3rem;
+      }
+
+    #about-img-div{
+        height: 30vh;
+        margin-top: 15%;
+        border-radius: 50%;
+    }
 }
 
 // tablets and small laptops screens
@@ -31,9 +40,26 @@
         }
     }
 
-  
+    #about-content-div{
+        /* background-color: blue; */
+        width: 50%;
+      
+      }
 
+      #about-content-div h1{
+        font-size: 3rem;
+      }
+
+      #about-content-div p{
+        line-height: 3em;
+       }
    
+       #about-img-div{
+        // width: 20%;
+        height: 30vh;
+        margin-top: 15%;
+        border-radius: 50%;
+    }
 }
 
 // smart phones screens
@@ -75,5 +101,32 @@
         //    background-color: blue;
            width: 100%;
         }
+    }
+
+    #about-main{
+        padding-top: 1vh;
+        display: block;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+    }
+
+    #about-content-div{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #about-content-div h1{
+        font-size: 3rem;
+      }
+
+      #about-content-div p{
+        line-height: 2em;
+       }
+
+    #about-img-div{
+        height: 15vh;
+        visibility: hidden;
+        border-radius: 50%;
     }
 }

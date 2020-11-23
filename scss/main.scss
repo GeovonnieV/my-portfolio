@@ -107,6 +107,76 @@ main{
     }
 }
 
+#about-main{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20vh;
+}
+
+#about-content-div{
+    /* background-color: blue; */
+    width: 50%;
+    text-align: center;
+  }
+
+  #about-content-div h1{
+    color: crimson;
+    font-size: 4rem;
+  }
+
+  #about-content-div p{
+   line-height: 3em;
+  }
+
+  #about-img-div{
+    width: 30%;
+    border-radius: 50%;
+}
+
+// my work
+
+#my-work-h1{
+    color: crimson;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 3rem;
+}
+
+#cards-div{
+    min-width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+#bottom{
+    margin-top: 2%;
+}
+
+.cards-row{
+    // background: blue;
+    display: flex;
+    justify-content: space-around;
+    // padding-top: 2%;
+    // width: 100%;
+}
+
+.card{
+    height: 40vh;
+}
+
+.card img {
+    height: 50%;
+}
+
+.card-title{
+    color: crimson;
+}
+
+.card-text{
+    color: black;
+}
+
+
 
 
 // Media Query mixins
