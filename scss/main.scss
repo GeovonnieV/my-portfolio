@@ -1,6 +1,141 @@
 $primary-color:  #444;
+$secondary-color: crimson;
+$show-home-image: ture;
+$home-image: url(../img/pro-back.jpg);
+$background-opacity: 0.9;
+
+@mixin easeOut{
+    transition: all 0.5s ease-out;
+}
+
+@mixin background {
+
+    @if $show-home-image{
+        &#bd-img{
+            background: $home-image;
+            // maeks the background cover entire page
+            background-attachment: fixed;
+            background-size: cover;
+            // dark page overlay
+            .overlay{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($primary-color, $background-opacity);
+                // pushes the darkoverlay to back of text
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+}
 
 body{
+    @include background;
     background: $primary-color;
     color: #ffffff;
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
+
+// Headings
+
+h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+
+    // adds style to the h1 with this as a class
+    &.lg-heading{   
+        font-size: 6rem;
+    }
+    // for the h2 with this class name
+    &.sm-heading{
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($color: $primary-color, $amount: 2),0.5);
+    }
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+main{
+    padding: 4rem;
+    height: 100%;
+
+    // grabbing icons in the main div
+    .icons{
+        margin-top: 1rem;
+
+        a{
+            padding: 0.4rem;
+
+            &:hover{
+                color: $secondary-color;
+                // use the ease out var from above
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home{
+        // no scroll bar
+        overflow: hidden;
+        h1{
+            margin-top: 20vh;
+        }
+    }
+}
+
+
+
+// Media Query mixins
+@mixin mediaSm {
+    // 
+    @media screen and (max-width: 500px){
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    // 
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    // 
+    @media screen and (min-width: 769px) and (max-width:1170px){
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    // 
+    @media screen and (min-width: 1171px){
+        @content;
+    }
+}
+@import "menu";
+@import "mobile";

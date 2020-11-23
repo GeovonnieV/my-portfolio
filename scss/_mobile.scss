@@ -1,0 +1,79 @@
+// wide screens
+@include mediaXl{
+    
+}
+
+// desktops and laptops screens
+@include mediaLg{
+
+}
+
+// tablets and small laptops screens
+@include mediaMd{
+    main{
+        align-items: center;
+        text-align: center;
+        
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ul.menu-nav,
+    div.menu-branding{
+        // float: none;
+        // width: 100%;
+        // min-height: 0;
+
+        &.show {
+            transform: translate3d(0,0,0);
+        }
+    }
+
+  
+
+   
+}
+
+// smart phones screens
+@include mediaSm{
+    main{
+        .lg-heading {
+            margin-top: 10vh;
+            font-size: 3rem;
+        }
+
+    }
+
+    
+    ul.menu-nav{
+        // float: none;
+        // width: 100%;
+        // min-height: 0;
+
+        &.show {
+            transform: translate3d(0,0,0);
+        }
+
+        .nav-link{
+            font-size: 25px;
+            margin-top: 40%;
+            // color: blue;
+        }
+    }
+
+
+    nav{
+        
+        .menu-branding{
+            visibility: hidden;
+            width: 0;
+        }
+
+        .menu-nav{
+        //    background-color: blue;
+           width: 100%;
+        }
+    }
+}
