@@ -162,6 +162,7 @@ main{
 
 .card{
     height: 40vh;
+    width: 25rem;
 }
 
 .card img {
@@ -176,6 +177,30 @@ main{
     color: black;
 }
 
+//contact
+#contact-h1{
+    padding-top: 10vh;
+    color: crimson;
+    text-align: center;
+}
+
+#contact-options{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-btn{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.btn span{
+    color: #ffffff;
+}
 
 
 

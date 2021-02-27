@@ -91,7 +91,8 @@
         .portrait{
             width: 250px;
             height: 250px;
-            background: url("../img/Dwight_Schrute.jpg");
+            background: url("../img/picofMe.jpg");
+            background-position: center top;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }

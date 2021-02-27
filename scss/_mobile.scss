@@ -15,6 +15,11 @@
         margin-top: 15%;
         border-radius: 50%;
     }
+    // my work style
+    .card{
+        height: 45vh;
+        width: 20rem;
+    }
 }
 
 // tablets and small laptops screens
@@ -60,6 +65,17 @@
         margin-top: 15%;
         border-radius: 50%;
     }
+
+     // my work style
+     .card{
+        height: 40vh;
+        width: 15rem;
+    }
+
+    .card-text{
+        font-size: .7rem;
+    }
+    
 }
 
 // smart phones screens
@@ -102,7 +118,7 @@
            width: 100%;
         }
     }
-
+    // about style
     #about-main{
         padding-top: 1vh;
         display: block;
@@ -129,4 +145,32 @@
         visibility: hidden;
         border-radius: 50%;
     }
+    // my work style
+
+    .row-2{
+        display: none;
+    }
+
+    .cards-row{
+        // background: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card{
+        height: 26.5vh;
+        margin-top: 3%;
+    }
+
+    .card-text{
+        display: none;
+    }
+
+    .contact-btn{
+        font-size: 100%;
+    }
+
+   
 }
