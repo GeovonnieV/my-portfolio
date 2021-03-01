@@ -1,1 +1,0 @@
-web: start .\dist\index.html
